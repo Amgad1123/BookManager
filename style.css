@@ -1,0 +1,15 @@
+button {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid black;
+    margin: 12px
+}
+
+form {
+    display: none;
+}
+
+form .input {
+    padding: 16px;
+    border: 1px solid black;
+}
