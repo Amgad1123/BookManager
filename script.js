@@ -16,10 +16,6 @@ function btnClick(event){
     book = new Book(crypto.randomUUID(),title, author, numpages, read)
     myLibrary.push(book);
     displayBook(myLibrary);
-    title = "";
-    author ="";
-    numpages = "";
-    read = "";
   }
 
 function Book(id, title, author, numpages, read) {
@@ -42,7 +38,7 @@ function displayBook(myLibrary) {
       <h3>${book.title}</h3>
       <p><strong>Author:</strong> ${book.author}</p>
       <p><strong>Pages:</strong> ${book.numpages}</p>
-      <p><strong>Read:</strong> ${book.read === "yes" ? "Yes" : "No"}</p>
+      <p><strong>Read:</strong> ${book.read ? "Yes" : "No"}</p>
       <button class="remove-btn">Remove</button>
       <button class="toggle-read-status-btn">Toggle Read Status</button>
     `;
