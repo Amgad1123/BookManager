@@ -50,6 +50,9 @@ function btnClick(event) {
   }
   const book = new Book(crypto.randomUUID(), title.value, author.value, numpages.value, read);
   myLibrary.push(book);
+  title.value = "";
+  author.value = "";
+  numpages.value = "";
   displayBooks();
 }
 
