@@ -2,16 +2,15 @@ let myLibrary = [];
 const libraryContainer = document.querySelector(".libContainer");
 
 function addChild() {
-  document.getElementById('form1').style.display = 'block';
+  document.getElementById('form1').setAttribute("style", "display: block;")
 }
 
-libraryContainer.setAttribute("style", "display: flex; flex-wrap: wrap; max-width: 800px;");
+libraryContainer.setAttribute("style", "display: flex; flex-wrap: wrap;");
 const btn = document.querySelector('#submit');
 btn.addEventListener("click", btnClick, false);
 
 function btnClick(event) {
   event.preventDefault();
-
   const title = document.querySelector('#title');
   const author = document.querySelector('#author');
   const numpages = document.querySelector('#numpages');
@@ -71,7 +70,7 @@ function displayBooks() {
     const bookCard = document.createElement("div");
     bookCard.classList.add("book-card");
     bookCard.setAttribute("data-id", book.id);
-    bookCard.setAttribute("style", "border: 1px solid black; border-radius: 8px; padding: 8px; margin: 12px; width: 200px;");
+    bookCard.setAttribute("style", "border: 2px solid black; border-radius: 8px; padding: 8px; margin: 12px; width: 200px; background-color: white;");
 
     bookCard.innerHTML = `
       <h3>${book.title}</h3>

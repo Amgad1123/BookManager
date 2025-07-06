@@ -1,9 +1,15 @@
-button {
-    padding: 8px;
-    border-radius: 8px;
-    border: 1px solid black;
-    margin: 12px
+body {
+    background-color: #964b00;
 }
+button {
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid black;
+    margin: 12px;
+    font-size: 12px;
+    font-weight: 200;
+}
+
 
 form {
     display: none;
